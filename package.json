@@ -103,7 +103,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "extract-react-intl-messages": "^4.1.1",
-    "husky": "^7.0.4",
     "imagemin-lint-staged": "^0.4.0",
     "lint-staged": "^11.2.3",
     "node-sass": "^6.0.1",
@@ -131,8 +130,6 @@
     "eject": "react-scripts eject",
     "gql-gen": "graphql-codegen --config codegen.yml",
     "i18n": "NODE_ENV=development node ./scripts/extract-intl-messages.js",
-    "prepare": "husky install",
-    "pre-commit": "lint-staged && npm run i18n && git add ./src/translations",
     "analyze": "npx source-map-explorer 'build/static/js/*.js'"
   },
   "lint-staged": {

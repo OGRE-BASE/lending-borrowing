@@ -123,6 +123,8 @@ export function Web3Provider({
   const [currentProviderName, setCurrentProviderName] = useState<
     AvailableWeb3Connectors | undefined
   >();
+
+  console.log('defaultChainId === ', defaultChainId);
   const [preferredNetwork, setPreferredNetwork] = useState(
     (Number(localStorage.getItem('preferredChainId')) || defaultChainId) as ChainId
   );
@@ -153,7 +155,7 @@ export function Web3Provider({
   ): Promise<boolean> => {
     let isSuccessful = false;
     setActivation(true);
-    console.log(network);
+    console.log('network = ', network);
     //TODO: maybe next line is useless
     localStorage.setItem('preferredChainId', network as unknown as string);
     try {

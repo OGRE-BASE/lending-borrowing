@@ -131,7 +131,7 @@ export const marketsData: { [key in keyof typeof CustomMarket]: MarketDataType }
     },
   },*/
   [CustomMarket.proto_avalanche]: {
-    chainId: ChainId.avalanche,
+    chainId: 8453 as ChainId,
     logo: logos.aaveLogo,
     activeLogo: logos.aaveActiveLogo,
     subLogo: logos.avalanche,
